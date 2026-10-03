@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+ public class laba2 {
+    
+    
+        public static void main(String[] args) {
+        
+        int n = Integer.parseInt(args[0]);
+        
+        if (n >= 1) {
+            int power = 1;
+            while( power <= n) {
+                System.out.println(power);
+                
+                // защита от переполнения
+                if (power > n / 2) break; 
+                power *= 2;
+            }
+        }
+    }
+}
